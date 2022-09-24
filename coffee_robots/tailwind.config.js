@@ -4,18 +4,27 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
-    colors: {
-      //configure custom colors here for use throughout the document
-      transparent: 'transparent',
-      current: 'currentColor',
-      'coffee-l': '#e8ded1',
-      'coffee-custom': '#f2f1f0',
-      'coffee-brown': '#a0816c',
-      'coffee-caramel': '#c8ad7e',
-      'coffee-Paper': '#bfaa8c',
-      'coffee-stain': '#d1c0a8'
-    }
+    extend: {
+      fontFamily: {
+        comfortaaBold: ["comfortaaBold", "cursive"],
+        comfortaaLight: ["comfortaaLight", "cursive"],
+        comfortaa: ["comfortaa", "cursive"],
+      },
+      colors: {
+        //configure custom colors here for use throughout the document
+        transparent: 'transparent',
+        current: 'currentColor',
+        'coffeeL': '#e8ded1',
+        'coffeeCards': '#ddc7a1',
+        'coffeeCustom': '#f2f1f0',
+        'coffeeBrown': '#a0816c',
+        'coffeeCaramel': '#c8ad7e',
+        'coffeePaper': '#bfaa8c',
+        'coffeeStain': '#d1c0a8',
+        'coffeeDark': '#240d0d',
+        'white': '#ffffff'
+      }
+    },
   },
   plugins: [],
 }

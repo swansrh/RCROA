@@ -11,7 +11,15 @@ function App() {
       </header>
       <body>
       <HelloUser name="Rhys Swansbra"/>
-        <CoffeeBox />
+        
+      
+      <div class="grid grid-rows-2 grid-flow-col gap-4">
+        <CoffeeBox coffeeType="Flat White"/>
+        <CoffeeBox coffeeType="Cappucciono"/>
+        <CoffeeBox coffeeType="Long Black"/>
+        <CoffeeBox coffeeType="Macchiato"/>
+      </div>
+
       </body>
     </div>
   );

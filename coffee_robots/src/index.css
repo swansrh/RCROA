@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "comfortaaBold";
+    src: url("./fonts/Comfortaa-Bold.ttf");
+    }
+
+  @font-face {
+    font-family: "comfortaa";
+    src: url("./fonts/Comfortaa-Regular.ttf");
+  }
+  @font-face {
+    font-family: "comfortaaLight";
+    src: url("./fonts/Comfortaa-Light.ttf");
+  }
