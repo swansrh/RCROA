@@ -5,7 +5,7 @@ class HelloUser extends React.Component {
     render() {
         return (
             <div>
-                <h1>Weclome Back, {this.props.name}</h1>
+                <h1 class="text-3xl font-bold underline">Weclome Back, {this.props.name}</h1>
                 <p>Feel like a coffee?</p>
             </div>
         );
