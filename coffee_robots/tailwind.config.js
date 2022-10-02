@@ -21,7 +21,7 @@ module.exports = {
         'coffeeCaramel': '#c8ad7e',
         'coffeePaper': '#bfaa8c',
         'coffeeStain': '#d1c0a8',
-        'coffeeDark': '#240d0d',
+        'coffeeDark': '#381515',
         'white': '#ffffff'
       }
     },
