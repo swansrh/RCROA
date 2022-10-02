@@ -18,7 +18,7 @@ module.exports = {
         'coffeeCards': '#ddc7a1',
         'coffeeCustom': '#f2f1f0',
         'coffeeBrown': '#a0816c',
-        'coffeeCaramel': '#c8ad7e',
+        'coffeeCaramel': '#d1b78a',
         'coffeePaper': '#bfaa8c',
         'coffeeStain': '#d1c0a8',
         'coffeeDark': '#381515',
