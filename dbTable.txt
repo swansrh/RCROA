@@ -23,3 +23,7 @@ VALUES ('Rhys', 'Swansbra', 'flatWhite', 'lactoseFree', 'large', 'fyshwick', '04
 ('Alex', 'Simp', 'cappucciono', 'lactoseFree', 'medium', 'fyshwick', '04:10', '4/10/2022', 'queue');
 
 
+
+shift+: then Q to exit add
+
+
