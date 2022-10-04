@@ -1,0 +1,25 @@
+reference: https://www.digitalocean.com/community/tutorials/introduction-to-queries-postgresql
+
+CREATE TABLE coffeeOrders ( 
+fName varchar(30),
+lName varchar(30), 
+coffeeType varchar(30), 
+milkType varchar(30), 
+coffeeSize varchar(30),
+location  varchar(30),
+timeOrdered time,
+dateOrdered date,
+coffeeStatus varchar(30)
+);
+
+fName, lName, coffeeType, milkType, size, location, timeOrdered
+
+Insert Data:
+
+INSERT INTO rcroa (fName, lName, coffeeType, milkType, size, location, timeOrdered, dateOrdered, coffeeStatus) 
+
+VALUES ('Rhys', 'Swansbra', 'flatWhite', 'lactoseFree', 'large', 'fyshwick', '04:00', '4/10/2022', 'beingMade'),
+('Sam', 'MacLennan', 'longBlack', 'none', 'small', 'fyshwick', '04:05', '4/10/2022', 'queue'), 
+('Alex', 'Simp', 'cappucciono', 'lactoseFree', 'medium', 'fyshwick', '04:10', '4/10/2022', 'queue');
+
+
