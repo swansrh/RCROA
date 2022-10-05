@@ -1,10 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
 import {HelloUser} from './MyComponents/HelloUser'
 import {CoffeeBox} from './MyComponents/coffeeBox'
 import {HomeHeader} from './MyComponents/HomeHeader'
+import React, {useState, useEffect} from 'react';
 
 function App() {
+  const [merchants, setMerchants] = useState(false);
+  useEffect(() => {
+    getCoffees();
+  }, []);
+
+  function getCoffees() {
+    fetch('http://localhost:3001')
+      .then(response => {
+        return response.text();
+      })
+      .then(data => {
+        setMerchants(data);
+      });
+  }
   return (
     <div className="App">
       <HomeHeader />
@@ -27,6 +41,10 @@ function App() {
               </div>
             </div>
           </div>
+
+        <div>
+          {merchants ? merchants : 'There is no merchant data available'}
+        </div>
 
         
       </body>
