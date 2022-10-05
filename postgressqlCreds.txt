@@ -1,5 +1,6 @@
 User Details
 username: rcroa
 password: C2dvFxr&0K0v
+db password: testPassword1
 SuperUser: y
 
