@@ -30,4 +30,3 @@ shift+: then Q to exit add
 SQL Query for currently making 
 
 SELECT * FROM public."coffeeOrders" WHERE "coffeeOrders"."coffeeStatus"='making' OR "coffeeOrders"."coffeeStatus"='queue';
-
