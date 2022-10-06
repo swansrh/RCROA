@@ -28,9 +28,10 @@ function Home() {
                         </div>
                     </div>
                 </div>
+                <Link to="/queue">
                 <button className="px-4 py-2 font-comfortaaBold text-sm text-coffeeCustom bg-coffeeDark rounded shadow">
-                        <Link to="/queue">Queue</Link>
-                    </button>
+                        Queue
+                    </button></Link>
             </body>
         </div>
     );
