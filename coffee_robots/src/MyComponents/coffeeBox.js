@@ -1,5 +1,6 @@
 import './coffeeBox.css';
 import React from "react";
+import { Outlet, Link } from "react-router-dom";
 
 class CoffeeBox extends React.Component {
     render() {
@@ -12,7 +13,7 @@ class CoffeeBox extends React.Component {
                 />
                 <div className="p-4">
                     <button className="px-4 py-2 font-comfortaaBold text-sm text-coffeeCustom bg-coffeeDark rounded shadow">
-                        {this.props.coffeeType}
+                        <Link to="/order">{this.props.coffeeType}</Link>
                     </button>
                 </div>
             </div>
