@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import { HelloUser } from '../MyComponents/HelloUser'
 import { CoffeeBox } from '../MyComponents/coffeeBox'
 import { HomeHeader } from '../MyComponents/HomeHeader'
