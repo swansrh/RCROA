@@ -2,14 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { HomeHeader } from '../MyComponents/HomeHeader'
 import { Outlet, Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import {OrderHead} from '../MyComponents/orderHeader'
 
 function Order() {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => console.log(data);
     return (
-        <><HomeHeader />
-            <h2 class="container mx-auto py-9">Order a Coffee?</h2>
-
+        <><OrderHead />
             <div class="w-full">
                 <form class=" rounded px-8 pt-6 pb-8 mb-4 justify-center mx-80" onSubmit={handleSubmit(onSubmit)}>
                     <label class="block text-gray-700 text-sm font-bold mb-2">First Name
@@ -52,7 +51,7 @@ function Order() {
                         </label>
                     </div>
 
-                    <div class="md:flex md:items-center">
+                    <div class="md:flex md:items-center ml-44">
                         <div class="md:w-1/3"></div>
                         <div class="md:w-2/3">
                             <button className="px-4 py-2 font-comfortaaBold text-sm text-coffeeCustom bg-coffeeDark rounded shadow" type="button">
