@@ -25,6 +25,7 @@ function Queue() {
   return (
     <><HomeHeader />
       {orders[0][0].fName}
+      {orders[0][0].lName}
       </>
 
  
