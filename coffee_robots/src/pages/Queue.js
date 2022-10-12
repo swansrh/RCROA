@@ -1,34 +1,34 @@
 import React, { useState, useEffect } from 'react';
-import { HelloUser } from '../MyComponents/HelloUser'
-import { CoffeeBox } from '../MyComponents/coffeeBox'
 import { HomeHeader } from '../MyComponents/HomeHeader'
-import { Outlet, Link } from "react-router-dom";
+
 
 function Queue() {
-    const [orders, setOrders] = useState(false);
-    useEffect(() => {
-      getCoffees();
-    }, []);
+  const [orders, setOrders] = useState([]);
   
-    function getCoffees() {
-      fetch('http://localhost:3001')
-        .then(response => {
-          let asJson = response.json();
-          console.log(asJson)
-          return asJson[1];
+  const getCoffees = () => {
+    fetch('http://localhost:3001')
+      .then(response => {
+       
+        return response.json();
+      })
+      .then(data => {
+       
+        setOrders([data]);
+      });
+  };
 
-        })
-        .then(data => {
-          setOrders(data);
-        });
-    }
-    return (
-        <><HomeHeader /><div>
+  useEffect(() => {
+    getCoffees();
+  }, []);
 
-            {orders}
+  
+  return (
+    <><HomeHeader />
+      {orders[0][0].fName}
+      </>
 
-        </div></>
-    );
+ 
+  );
 }
 
 export default Queue;
