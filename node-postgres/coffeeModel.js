@@ -14,6 +14,7 @@ const getCoffees = () => {
           reject(error)
         }
         resolve(results.rows);
+        console.log(results.rows[0])
       })
     }) 
   }

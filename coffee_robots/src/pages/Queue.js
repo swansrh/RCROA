@@ -13,7 +13,10 @@ function Queue() {
     function getCoffees() {
       fetch('http://localhost:3001')
         .then(response => {
-          return response.text();
+          let asJson = response.json();
+          console.log(asJson)
+          return asJson[1];
+
         })
         .then(data => {
           setOrders(data);
@@ -21,7 +24,9 @@ function Queue() {
     }
     return (
         <><HomeHeader /><div>
+
             {orders}
+
         </div></>
     );
 }
