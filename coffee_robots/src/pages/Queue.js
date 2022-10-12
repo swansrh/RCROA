@@ -5,7 +5,7 @@ import { HomeHeader } from '../MyComponents/HomeHeader'
 import { Outlet, Link } from "react-router-dom";
 
 function Queue() {
-    const [merchants, setMerchants] = useState(false);
+    const [orders, setOrders] = useState(false);
     useEffect(() => {
       getCoffees();
     }, []);
@@ -16,12 +16,12 @@ function Queue() {
           return response.text();
         })
         .then(data => {
-          setMerchants(data);
+          setOrders(data);
         });
     }
     return (
         <><HomeHeader /><div>
-            {merchants ? merchants : 'There is no merchant data available'}
+            {orders}
         </div></>
     );
 }
