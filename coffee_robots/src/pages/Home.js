@@ -9,7 +9,7 @@ function Home() {
         <div className="App">
             <HomeHeader />
             <body>
-                <HelloUser quote="Bean here before?" />
+                <HelloUser quote="Welcome, Bean here before?" />
 
                 <div class="container mx-auto py-9">
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
